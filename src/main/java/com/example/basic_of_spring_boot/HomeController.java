@@ -14,4 +14,10 @@ public class HomeController {
     public String home() {
         return greeting;
     }
+
+    @GetMapping("/static")
+    public String getAllData() {
+        return "This is a static method in HomeController.";
+    }
 }
+
